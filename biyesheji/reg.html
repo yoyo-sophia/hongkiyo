@@ -1,0 +1,177 @@
+<!--<!DOCTYPE html>-->
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<title>hokiyo注册</title>
+		<link rel="stylesheet" href="css/index2.css" />
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+		<style type="text/css">
+			/*/public*/
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				background: url(img/bg-reg2.jpg) no-repeat;
+				position: relative;
+			}
+			
+			a,
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				text-decoration: none;
+			}
+			
+			.cl-white {
+				color: #fff;
+			}
+			
+			.text-center {
+				text-align: center;
+			}
+			
+			.clearfix::before,
+			.clearfix::after {
+				content: "";
+				display: table;
+			}
+			
+			.clearfix {
+				clear: both;
+			}
+			/*/public*/
+			.main {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background: url(img/bg-reg2.jpg) center center;
+				border-radius: 5px;
+				box-shadow: 3px 3px 50px #000;
+			}
+			.reg-ingo-wrap input,.btn-next{
+				width: 380px;
+				height: 30px;
+				border-style: none;
+				border-radius: 30px;
+				outline: none;
+			} 
+			.reg-ingo-wrap input{
+				padding-left: 10px;
+				background: rgba(255,255,255,0.4);
+			}
+			.btn-next{
+				margin:10px 0 100px;
+				background-color: #F2546e;
+			}
+			.login {
+				background-color: #ad98c1;
+				color: #fff;
+			}
+			.tab-panel-wrap{
+				padding: 0 140px;
+			}
+			@media only screen and (max-width:768px) {
+				.reg-ingo-wrap input,
+				.reg-ingo-wrap label,
+				.btn-next{
+					width: 100%;
+				}
+				.reg-ingo-wrap label {
+					text-align: left;
+				}
+				.reg-ingo-wrap u {
+					display: none;
+				}
+				.login {
+					margin: 10px;
+				}
+				.tab-panel-wrap{
+				padding: 0 20px;
+				}
+			}
+			
+			.cl-reg{
+				color:#EEECEB;
+			}
+			.nav-reg {
+				padding: 100px 0 40px;
+			}
+			.nav-reg li{
+				display: inline-block;
+				padding: 0 10px;
+			}
+			.fixed{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0,0,0,0.6);
+				z-index: -1;
+			}
+			.reg-num{
+				display: inline-block;
+				height: 25px;
+				width: 25px;
+				background: /*#F2546e*/#28b473;
+				text-align: center;
+				line-height:25px;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main" id="main">
+			<div class="nav-reg cl-white f-16 text-center">
+				<ul>
+					<li><span class="reg-num">1</span><span>设置用户名</span></li>
+					<li><span class="reg-num">2</span><span>填写账户信息</span></li>
+					<li><span class="reg-num icon-selected"></span><span>注册完成</span></li>
+				</ul>
+			</div>
+			<div class="tab-panel-wrap">
+				<!--first-->
+				<div>
+					<form action="">
+						<div class="reg-ingo-wrap">
+							<label class="cl-white">用户名</label>
+							<p><input type="text" name="" id="" value="" /></p>
+						</div>
+						<div class="reg-ingo-wrap">
+							<label class="cl-white">验证</label>
+							<p><input type="text" name="" id="" value="" /></p>
+						</div>
+						<input class="btn-next cl-reg" type="button" value="下一步" />
+					</form>
+				</div>
+				<!--second-->
+				<div></div>
+				<!--third-->
+				<div></div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+	</body>
+	<script src="lib/jquery/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			function resize() {
+				var margin_l = $("#main").width() / 2;
+				var margin_t = $("#main").height() / 2;
+				$("#main").css({
+					"margin-top": -margin_t,
+					"margin-left": -margin_l
+				});
+			}
+			$(window).on('resize', resize).trigger('resize');
+		});
+	</script>
+
+</html>
