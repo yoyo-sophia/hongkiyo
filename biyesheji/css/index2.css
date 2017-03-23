@@ -274,14 +274,16 @@ body {
 
 .login {
 	position: absolute;
-	top: 22px;
+	top: 28px;
 	right: 0px;
-	border-top: 1px solid #C7254E;
+	/*border-top: 1px solid #C7254E;*/
 	z-index: 999;
 	/*display: none;*/
 	opacity: 0;
 	filter: alpha(opacity=0);
 	transition: all 0.3s ease-in;
+	box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .25);
+	border-radius: 5px;
 }
 
 .login> a {
@@ -291,10 +293,16 @@ body {
 	line-height: 30px;
 	text-align: center;
 	background-color: #f8f8f8;
+	border-radius: 5px;
+}
+
+.login> a:first-child {
+	border-radius:5px 5px 0px 0px;
 }
 
 .login> a:last-child {
 	border-top: 1px solid #C7254E;
+	border-radius:0px 0px 5px 5px;
 }
 
 .icon-user-wrap:hover .login {
