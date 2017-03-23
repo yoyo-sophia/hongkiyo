@@ -175,7 +175,7 @@ body {
 	border-style: none;
 	padding-left: 10px;
 	background-color: transparent;
-	border-bottom: 1px solid darkgrey;
+	border-bottom: 1px solid lightgray;
 	/*border-bottom: 1px solid #ff0000;*/
 	cursor: text;
 }
